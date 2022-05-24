@@ -22,7 +22,7 @@ namespace SecuredApplication.Areas.Identity
 
                 services.AddDefaultIdentity<SecuredApplicationUser>(options => {
 
-                    options.SignIn.RequireConfirmedAccount = false;
+                    options.SignIn.RequireConfirmedAccount = true;
                     options.Password.RequireNonAlphanumeric = true;
                     
                     
